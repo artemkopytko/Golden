@@ -1,0 +1,15 @@
+ $heading-ff: 'Montserrat';
+ $italic-ff: 'Droid Serif';
+ $text-ff: 'Roboto Slab';
+
+ .clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ .cl-wht {
+   color: white;
+ }
+
+

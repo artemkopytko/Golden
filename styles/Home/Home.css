@@ -1,0 +1,540 @@
+@import url(../General/hoverEffect.css);
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.cl-wht {
+  color: white; }
+
+* {
+  box-sizing: border-box; }
+
+.wrapper {
+  min-width: 1248px; }
+
+.container {
+  width: 940px;
+  position: relative;
+  display: block;
+  margin: 0 auto; }
+
+.header {
+  height: 700px;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  overflow: hidden; }
+
+.header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+  background-image: url("../../assets/header/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.header-top {
+  margin-top: 50px;
+  font-size: 15px; }
+
+.header-top .header-top-logo {
+  float: left;
+  font-size: 26px;
+  font-family: "Droid Serif";
+  font-style: italic;
+  color: #fed136; }
+
+.header-top .header-top-nav {
+  float: right;
+  line-height: 15px; }
+  .header-top .header-top-nav ul {
+    padding: 0;
+    list-style: none; }
+  .header-top .header-top-nav li {
+    color: white;
+    font-family: "Montserrat";
+    display: inline-block;
+    margin-right: 35px;
+    line-height: 26px; }
+    .header-top .header-top-nav li:hover {
+      cursor: pointer;
+      color: #fed136; }
+    .header-top .header-top-nav li a {
+      text-decoration: none;
+      transition: all 0.7s;
+      color: inherit; }
+
+.header-main {
+  margin-top: 195px;
+  color: white; }
+  .header-main span {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  .header-main span:first-child {
+    font-family: "Droid Serif";
+    font-style: italic;
+    font-size: 40px; }
+  .header-main span:nth-child(2) {
+    margin-top: 50px;
+    font-family: "Montserrat";
+    font-size: 75px;
+    font-weight: bold; }
+  .header-main button {
+    display: block;
+    color: inherit;
+    margin: 60px auto 0 auto;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fed136;
+    border: 0;
+    transition: all 0.7s;
+    cursor: pointer;
+    padding: 20px 50px; }
+    .header-main button:hover {
+      color: #000; }
+
+.header-fixed {
+  position: fixed;
+  width: inherit;
+  top: -50px;
+  z-index: 100;
+  background-color: #222222;
+  opacity: 0.8; }
+  .header-fixed .header-top-logo {
+    padding: 10px; }
+  .header-fixed ul {
+    line-height: 50px; }
+    .header-fixed ul a {
+      padding: 10px; }
+
+.services {
+  height: 570px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff; }
+
+.title {
+  margin-top: 120px; }
+  .title span {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  .title span:first-child {
+    font-size: 40px;
+    font-family: "Montserrat";
+    font-weight: bold; }
+  .title span:last-child {
+    margin-top: 20px;
+    font-family: "Droid Serif";
+    color: #777777;
+    font-size: 16px;
+    font-style: italic; }
+
+.service {
+  margin-top: 80px;
+  width: 290px;
+  height: 185px;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  margin-right: 35px; }
+  .service:last-child {
+    margin-right: 0; }
+
+.service-icon-row {
+  display: block;
+  height: 75px; }
+  .service-icon-row .service-icon {
+    height: 75px;
+    display: inline-block;
+    width: 75px;
+    line-height: 75px;
+    border: 2px solid #fed136;
+    border-radius: 50%; }
+    .service-icon-row .service-icon img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle; }
+
+.service-text {
+  margin-top: 25px;
+  text-align: center; }
+  .service-text span {
+    display: block;
+    margin: 0 auto; }
+  .service-text span:first-child {
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: bold; }
+  .service-text span:last-child {
+    margin-top: 25px;
+    font-family: "Droid Serif";
+    color: #777777;
+    font-size: 14px;
+    font-style: italic; }
+
+.portfolio {
+  height: 1220px;
+  position: relative;
+  width: 100%;
+  background-color: #f7f7f7;
+  overflow: hidden; }
+
+.portfolio-works {
+  margin-top: 30px; }
+
+.work-example {
+  margin-top: 50px;
+  float: left;
+  height: 390px;
+  width: 290px;
+  background-color: #fff;
+  margin-right: 35px; }
+  .work-example:nth-child(3), .work-example:last-child {
+    margin-right: 0; }
+  .work-example .work-image {
+    width: 100%;
+    height: 300px; }
+    .work-example .work-image img {
+      max-height: 100%;
+      max-width: 100%; }
+  .work-example .work-description {
+    margin-top: 30px;
+    text-align: center; }
+    .work-example .work-description span {
+      display: block; }
+    .work-example .work-description span:first-child {
+      font-size: 18px;
+      font-family: "Montserrat";
+      font-weight: bold; }
+    .work-example .work-description span:last-child {
+      font-size: 14px;
+      font-family: "Droid Serif";
+      font-style: italic;
+      color: #777777; }
+
+.about {
+  height: 1666px;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.about-row {
+  margin-top: 90px;
+  height: 185px;
+  width: 565px; }
+  .about-row .row-text {
+    width: 340px;
+    line-height: 1.25; }
+    .about-row .row-text span {
+      display: block; }
+    .about-row .row-text span:first-child {
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 18px; }
+    .about-row .row-text span:last-child {
+      line-height: 1.5;
+      margin-top: 20px;
+      font-size: 14px;
+      font-family: "Roboto Slab";
+      color: #777777; }
+  .about-row .row-image-block {
+    width: 185px;
+    height: 185px; }
+  .about-row:nth-child(even) {
+    float: left; }
+    .about-row:nth-child(even) .row-text {
+      text-align: right;
+      float: left; }
+    .about-row:nth-child(even) .row-image-block {
+      float: right;
+      margin-left: 40px; }
+  .about-row:nth-child(odd) {
+    float: right; }
+    .about-row:nth-child(odd) .row-text {
+      float: right; }
+    .about-row:nth-child(odd) .row-image-block {
+      float: left;
+      margin-right: 40px; }
+  .about-row .row-image {
+    height: 185px;
+    width: 185px;
+    margin: 0 auto;
+    background-color: crimson;
+    border-radius: 50%;
+    border: 5px solid #f1f1f1;
+    background-repeat: no-repeat;
+    background-size: 150%; }
+
+#aboutRowFirst {
+  background-image: url("../../assets/about/about1.png"); }
+
+#aboutRowSecond {
+  background-image: url("../../assets/about/about2.png");
+  -webkit-background-size: 152%;
+  background-size: 152%; }
+
+#aboutRowThird {
+  background-image: url("../../assets/about/about3.png");
+  -webkit-background-size: 155%;
+  background-size: 155%; }
+
+#aboutRowFourth {
+  background-image: url("../../assets/about/about4.png"); }
+
+.about-row-cont {
+  height: 185px;
+  float: right;
+  display: block;
+  clear: both;
+  width: 185px;
+  border: 5px solid #f1f1f1;
+  background-color: #fed136;
+  border-radius: 50%; }
+  .about-row-cont span {
+    margin-top: 35px;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    display: block;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: bold; }
+
+.team {
+  height: 820px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f9f9f9; }
+
+.team-members {
+  margin-top: 85px; }
+
+.team-member {
+  width: 290px;
+  float: left;
+  height: 340px;
+  display: inline-block;
+  margin-right: 35px; }
+  .team-member:last-child {
+    margin-right: 0; }
+  .team-member .team-member-photo {
+    display: block;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #000; }
+
+.team-member-info {
+  margin-top: 20px; }
+  .team-member-info span {
+    display: block;
+    text-align: center; }
+    .team-member-info span:first-child {
+      color: black;
+      font-family: "Montserrat";
+      font-weight: bold;
+      font-size: 18px; }
+    .team-member-info span:nth-child(2) {
+      color: #777777;
+      font-family: "Roboto Slab";
+      font-size: 16px; }
+
+.team-member-social {
+  margin-top: 15px;
+  display: block;
+  height: 40px;
+  text-align: center; }
+  .team-member-social a {
+    line-height: 40px;
+    text-decoration: none;
+    transition: all 0.5s;
+    color: black;
+    border-radius: 50%;
+    font-size: 25px;
+    display: inline-block;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black; }
+    .team-member-social a i {
+      line-height: 37px; }
+
+.team-text {
+  width: 600px;
+  height: 40px;
+  font-family: "Roboto Slab";
+  color: #777777;
+  margin: 55px auto 0 auto; }
+
+.logos {
+  height: 165px;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .logos ul {
+    margin-top: 60px;
+    list-style-type: none;
+    padding: 0; }
+    .logos ul li {
+      display: inline-block;
+      height: 45px;
+      margin-right: 40px; }
+      .logos ul li:first-child {
+        margin-left: 80px; }
+      .logos ul li:last-child {
+        margin-right: 0; }
+      .logos ul li img {
+        max-height: 100%;
+        max-width: 100%; }
+
+.contact {
+  height: 680px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #222222; }
+
+.contact:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.3;
+  background-image: url("../../assets/contact/Map-Image.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.contact-form {
+  margin-top: 80px; }
+  .contact-form .contact-form-sender {
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    width: 455px;
+    height: 210px; }
+    .contact-form .contact-form-sender input {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font-family: "Montserrat";
+      border-radius: 3px;
+      border: 0;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 15px;
+      margin-bottom: 30px; }
+      .contact-form .contact-form-sender input:last-child {
+        margin-bottom: 0; }
+  .contact-form .contact-form-message {
+    display: inline-block;
+    margin-left: 30px;
+    width: 455px;
+    height: 210px; }
+    .contact-form .contact-form-message textarea {
+      width: 100%;
+      padding: 20px;
+      height: 100%;
+      resize: none;
+      border: 0;
+      border-radius: 3px; }
+  .contact-form button {
+    background-color: #fed136;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 18px;
+    border: 0;
+    border-radius: 3px;
+    padding: 25px 45px;
+    display: block;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+    transition: all 0.7s; }
+    .contact-form button:hover {
+      color: #000000; }
+
+.footer {
+  height: 90px;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.footer-content {
+  margin-top: 20px; }
+  .footer-content span {
+    line-height: 40px;
+    position: absolute;
+    font-family: "Montserrat";
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: black; }
+    .footer-content span:active {
+      color: black; }
+
+.footer-icons {
+  display: block;
+  height: 40px;
+  text-align: center; }
+  .footer-icons a {
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: #000; }
+    .footer-icons a i {
+      line-height: 37px; }
+
+a.icon-twitter:hover {
+  color: white;
+  border: 0;
+  background-color: #00aced; }
+
+a.icon-facebook:hover {
+  color: white;
+  border: 0;
+  background-color: #3b5998; }
+
+a.icon-pinterest:hover {
+  color: white;
+  border: 0;
+  background-color: #cb2028; }
+
+a.icon-googleplus:hover {
+  color: white;
+  border: 0;
+  background-color: #da2713; }
+
+/*# sourceMappingURL=Home.css.map */
